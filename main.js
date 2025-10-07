@@ -1,6 +1,8 @@
-
-
-
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 
 const perguntas = [
@@ -69,7 +71,7 @@ const perguntas = [
             }
         ]
     },
-        {
+    {
         enunciado: "Como você gosta de resolver problemas?",
         alternativas: [
             {
@@ -82,7 +84,7 @@ const perguntas = [
             }
         ]
     },
-        {
+    {
         enunciado: "Em relação à criatividade, você prefere:",
         alternativas: [
             {
@@ -95,7 +97,7 @@ const perguntas = [
             }
         ]
     },
-        {
+    {
         enunciado: "Qual destas opções combina mais com você?",
         alternativas: [
             {
@@ -108,7 +110,7 @@ const perguntas = [
             }
         ]
     },
-        {
+    {
         enunciado: "Se tivesse que escolher entre dois trabalhos:",
         alternativas: [
             {
@@ -121,7 +123,7 @@ const perguntas = [
             }
         ]
     },
-        {
+    {
         enunciado: "O que te traria mais satisfação?",
         alternativas: [
             {
@@ -135,3 +137,14 @@ const perguntas = [
         ]
     },
 ];
+
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
