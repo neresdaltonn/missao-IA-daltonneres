@@ -4,18 +4,17 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-
 const perguntas = [
     {
         enunciado: "O que mais te atrai em uma profissão?",
         alternativas: [
             {
                 texto: "Cuidar das pessoas, melhorar a vida delas.",
-                afirmacao: "Você tende para Saúde (Medicina, Enfermagem, Psicologia, Nutrição, Fisioterapia, Odontologia).",
+                afirmacao: "Você tem afinidade com áreas que envolvem cuidado e bem-estar, como Saúde, Psicologia e Nutrição.",
             },
             {
                 texto: "Resolver problemas práticos e criar soluções.",
-                afirmacao: "Você tende para Exatas e Engenharias (Mecânica, Engenharia Mecânica, Software, Administração).",
+                afirmacao: "Você tende para áreas tecnológicas e analíticas, como Engenharia, Ciência da Computação e Administração.",
             }
         ]
     },
@@ -24,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ao ar livre, com contato com a natureza",
-                afirmacao: "Perfil de Ciências Agrárias (Agronomia, Zootecnia, Biologia, Agricultura).",
+                afirmacao: "Você tem um perfil voltado para Ciências Agrárias, como Agronomia e Zootecnia, onde o contato com o ambiente natural é essencial.",
             },
             {
                 texto: "Em escritórios, hospitais ou laboratórios.",
-                afirmacao: "Perfil de Ciências da Saúde e Humanas (Medicina, Direito, Psicologia, Ciências Contábeis, Farmácia).",
+                afirmacao: "Você tem um perfil voltado para Ciências da Saúde e Humanas, como Medicina, Psicologia e Ciências Contábeis.",
             }
         ]
     },
@@ -37,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Lidar com pessoas, comunicação e liderança.",
-                afirmacao: "Perfil de Humanas (Educação, Artes Cênicas, Administração, Direito).",
+                afirmacao: "Você se destaca em áreas de Humanas, como Administração, Direito e Educação, onde a interação humana é central.",
             },
             {
-                texto: " Lidar com máquinas, sistemas ou cálculos.",
-                afirmacao: "Perfil de Exatas (Software, Engenharia, Mecânica, Contabilidade).",
+                texto: "Lidar com máquinas, sistemas ou cálculos.",
+                afirmacao: "Você tem afinidade com Exatas, como Engenharia, Ciência da Computação e Matemática, onde a lógica e os números estão em primeiro plano.",
             }
         ]
     },
@@ -50,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Com prática, experimentos e movimento.",
-                afirmacao: "Você se encaixa em Saúde, Educação Física ou Agrárias.",
+                afirmacao: "Você se encaixa bem em áreas como Saúde, Educação Física e Agrárias, onde o aprendizado prático e a ação são essenciais.",
             },
             {
                 texto: "Com leitura, teoria e pesquisa.",
-                afirmacao: "Você se encaixa em Direito, Psicologia, Ciências Biológicas.",
+                afirmacao: "Você se destaca em áreas como Direito, Psicologia e Ciências Biológicas, onde a teoria e o conhecimento acadêmico são fundamentais.",
             }
         ]
     },
@@ -63,11 +62,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Um projeto social (bem-estar, inclusão, saúde).",
-                afirmacao: "Perfil de Saúde/Humanas.",
+                afirmacao: "Você tem um perfil voltado para Saúde, Humanas e Ciências Sociais, com foco em impacto social e bem-estar.",
             },
             {
                 texto: "Um projeto tecnológico (máquinas, sistemas, inovação).",
-                afirmacao: "Perfil de Exatas/Tecnologia.",
+                afirmacao: "Você se encaixa em áreas tecnológicas e inovadoras, como Engenharia e Tecnologia, com foco em soluções práticas e inovação.",
             }
         ]
     },
@@ -76,11 +75,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Conversando e ouvindo diferentes pontos de vista.",
-                afirmacao: "Perfil de Psicologia, Direito, Administração.",
+                afirmacao: "Você tem um perfil voltado para áreas como Psicologia, Direito e Administração, onde a comunicação é essencial para resolver questões.",
             },
             {
                 texto: "Testando, calculando e aplicando soluções práticas.",
-                afirmacao: "Perfil de Engenharia, Software, Mecânica.",
+                afirmacao: "Você tem afinidade com Engenharia, Software e Ciências Exatas, onde o foco é encontrar soluções práticas e funcionais.",
             }
         ]
     },
@@ -88,12 +87,12 @@ const perguntas = [
         enunciado: "Em relação à criatividade, você prefere:",
         alternativas: [
             {
-                texto: " Expressar ideias por meio de arte, fala ou movimento.",
-                afirmacao: "Perfil de Artes Cênicas, Comunicação, Educação Física.",
+                texto: "Expressar ideias por meio de arte, fala ou movimento.",
+                afirmacao: "Você se destaca nas áreas criativas e de expressão, como Artes Cênicas, Comunicação e Educação Física.",
             },
             {
                 texto: "Criar soluções técnicas, inventar coisas novas.",
-                afirmacao: "Perfil de Engenharia, Agronomia, Software.",
+                afirmacao: "Você tem um perfil voltado para Engenharia, Software e Agronomia, onde a inovação técnica é o foco.",
             }
         ]
     },
@@ -102,11 +101,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Tenho paciência, gosto de ouvir e aconselhar.",
-                afirmacao: "Perfil de Psicologia, Educação, Saúde.",
+                afirmacao: "Você se encaixa em áreas de apoio e aconselhamento, como Psicologia, Educação e Saúde.",
             },
             {
                 texto: "Sou objetivo, gosto de números e lógica.",
-                afirmacao: "Perfil de Ciências Contábeis, Administração, TI, Engenharia.",
+                afirmacao: "Você tem afinidade com áreas analíticas e lógicas, como Ciências Contábeis, Administração e Tecnologia.",
             }
         ]
     },
@@ -115,11 +114,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Um hospital ou clínica, lidando com pacientes.",
-                afirmacao: "Perfil de Saúde.",
+                afirmacao: "Você tem um perfil voltado para Saúde, com foco em cuidar de pessoas e promover bem-estar.",
             },
             {
                 texto: "Uma empresa de tecnologia, lidando com sistemas.",
-                afirmacao: "Perfil de Exatas/Tecnologia.",
+                afirmacao: "Você se encaixa em áreas de Exatas e Tecnologia, com foco em soluções digitais e inovação.",
             }
         ]
     },
@@ -128,16 +127,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ver pessoas melhorando e reconhecendo meu impacto.",
-                afirmacao: "Perfil de Saúde, Humanas, Educação.",
+                afirmacao: "Você se destaca em áreas onde o impacto humano é claro, como Saúde, Educação e Psicologia.",
             },
             {
                 texto: "Ver uma máquina, sistema ou experimento funcionando perfeitamente.",
-                afirmacao: "Perfil de Exatas, Agrárias, Tecnologia.",
+                afirmacao: "Você tem afinidade com áreas técnicas e de inovação, como Engenharia, Agronomia e Tecnologia.",
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -173,7 +171,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Se fosse possível...";
+    caixaPerguntas.textContent = "Após avaliar suas respostas, o seu perfil profissional é:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = " ";
 }
