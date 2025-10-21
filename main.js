@@ -141,8 +141,15 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal = " ";
 
 function mostraPergunta() {
+
+    if (atual >= perguntas.length){
+        mostraResultado;
+        return;
+    }
+
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     mostraAlternativas();
