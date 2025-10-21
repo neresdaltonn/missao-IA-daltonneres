@@ -156,6 +156,7 @@ for(const alternativa of perguntaAtual.alternativas){
         atual++
         mostraPergunta();
     })
+    caixaAlternativas.appendChild(botaoAlternativas);
 }
 }
 
