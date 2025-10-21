@@ -1,10 +1,11 @@
 :root {
-    --cor-fundo: #000000;        /* Preto */
-    --cor-principal: #FFFFFF;    /* Branco */
-    --cor-secundaria: #333333;   /* Cinza escuro */
-    --cor-destaque: #00FF00;     /* Verde */
-    --cor-texto: #FFFFFF;        /* Branco para texto */
+    --cor-fundo: #000000;        
+    --cor-principal: #1c1c1c;    
+    --cor-secundaria: #333333;   
+    --cor-destaque: #00FF00;     
+    --cor-texto: #000000;        
 }
+
 
 body {
     background-color: var(--cor-fundo);
