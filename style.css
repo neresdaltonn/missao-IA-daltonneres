@@ -58,3 +58,11 @@ button:hover {
     color: var(--cor-destaque);
     line-height: 1.5em;
 }
+
+.rodape {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--cor-secundaria); 
+    font-size: 0.8em;
+    color: rgba(0, 255, 0, 0.7); 
+}
